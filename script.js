@@ -10,7 +10,7 @@ submit.addEventListener("click", getDetails);
 async function getDetails(event) {
     try {
         const title = document.getElementById("movieInput").value.trim(); // Get user input
-        const response = await fetch(`http://www.omdbapi.com/?t=${title}&apikey=1780685`); // API request
+        const response = await fetch(`https://www.omdbapi.com/?t=${title}&apikey=1780685`); // API request
         const movieDetails = await response.json(); // Convert response to JSON
 
         // Display movie info
